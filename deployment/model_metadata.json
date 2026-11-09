@@ -1,0 +1,6 @@
+{
+    "model_name": "RandomForestClassifier",
+    "model_type": "RandomForestClassifier",
+    "version": "1.0.0",
+    "features": []
+}

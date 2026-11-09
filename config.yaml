@@ -1,0 +1,23 @@
+data:
+  artifacts_dir: artifacts/
+  deployment_dir: deployment/
+  id_column: customerID
+  models_dir: models/
+  new_data_path: data/raw/new_churn.csv
+  processed_dir: data/processed/
+  raw_path: data/raw/churn.csv
+  target_column: churn
+mlflow:
+  experiment_name: churn_prediction
+  tracking_uri: mlruns
+model:
+  random_state: 42
+  target_column: churn
+  test_size: 0.2
+paths:
+  metrics: artifacts/metrics.json
+  model: models/churn_model.pkl
+  preprocessor: models/preprocessor.pkl
+split:
+  random_state: 42
+  test_size: 0.2
